@@ -5,5 +5,4 @@ void main(){
     product=x*y;
     printf("Product: %f",product);
     return 0;
-
 }
