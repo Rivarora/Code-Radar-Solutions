@@ -8,5 +8,5 @@ void main(){
     else{
         printf("False");
     }
-    getch();
+    return 0;
 }
