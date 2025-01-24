@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main(){
+int main(){
     int x,y;
     scanf("%d %d",&x , &y);
     if(x>y){
