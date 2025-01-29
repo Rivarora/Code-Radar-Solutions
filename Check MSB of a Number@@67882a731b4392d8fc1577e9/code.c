@@ -3,8 +3,7 @@
 int main(){
     int x;
     scanf("%d",&x);
-    size=sizeof(x)
-    if(x & (1 << (size-1))){
+    if(x & (1 << (sizeof(x)-1))){
         printf("Set");
     }
     else
