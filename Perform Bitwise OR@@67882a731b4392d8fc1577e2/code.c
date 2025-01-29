@@ -3,11 +3,7 @@
 int main(){
     int x,y;
     scanf("%d %d",&x,&y);
-    if(x|y){
-        printf("Ture");
-    }
-    else{
-        printf("False");
-    }
+    bit_or=x|y;
+    printf("%d",bit_or);
     return 0;
 }
