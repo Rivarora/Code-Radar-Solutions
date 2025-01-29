@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    int x;
+    int x,size;
     scanf("%d",&x);
-    if(x & (1 << (sizeof(x)-1))){
+    size=sizeof(x);
+    if(x & (1 << (size-1))){
         printf("Set");
     }
     else
