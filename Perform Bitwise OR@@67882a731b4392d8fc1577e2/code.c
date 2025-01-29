@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int x,y;
+    int x,y,result;
     scanf("%d %d",&x,&y);
-    bit_or=x|y;
-    printf("%d",bit_or);
+    result=x|y;
+    printf("%d",result);
     return 0;
 }
