@@ -1,9 +1,11 @@
 #include <stdio.h>
 int main(){
-int x,n,count;
+int x,count;
 count=0;
-scanf("%d %d",&x &n);
+n=0
+scanf("%d",&x);
 while(n&1==0){
+    n=n>>1;
     count++;
 }
 return 0;
