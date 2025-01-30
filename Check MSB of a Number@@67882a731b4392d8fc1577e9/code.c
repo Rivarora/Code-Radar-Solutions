@@ -4,7 +4,7 @@ int main(){
     int x,size;
     scanf("%d",&x);
     size=sizeof(x);
-    if(x & (1 << (size-1))){
+    if(x>>31){
         printf("Set");
     }
     else
