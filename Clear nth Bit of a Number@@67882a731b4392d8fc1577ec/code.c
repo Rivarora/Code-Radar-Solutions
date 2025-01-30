@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    int x,num,new_num;
-    scanf("%d %d",&x,&num);
-    new_num=num & ~ (1<<x);
-    printf("%d",new_num);
+    int a,b;
+    scanf("%d %d",&x,&b);
+    printf("%d",a & ~(1<<b));
     return 0;
 }
