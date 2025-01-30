@@ -7,5 +7,8 @@ int main(){
     if(n&(1<<n)){
         printf("%d",n);
     }
+    else{
+        printf("%d",0)
+    }
     return 0;
 }
