@@ -2,6 +2,6 @@
 int main(){
 int x;
 scanf("%d",&x);
-printf("%d",x & -x);
+printf("%d",log2(x & -x)+1);
 return 0;
 }
