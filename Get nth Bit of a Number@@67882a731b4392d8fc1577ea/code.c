@@ -4,6 +4,8 @@ int main(){
     scanf("%d",&x);
     scanf("%d",&n);
     nth_bit=n&(1<<n)
-    printf("%d",nth_bit);
+    if(n&(1<<n)){
+        printf("%d",n);
+    }
     return 0;
 }
