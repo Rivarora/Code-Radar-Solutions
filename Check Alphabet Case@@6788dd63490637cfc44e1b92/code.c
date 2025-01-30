@@ -7,7 +7,7 @@ int main(){
         printf("Uppercase");
     }
     else {
-        printf("Lowercse");
+        printf("Lowercase");
     }
     return 0;
 }
