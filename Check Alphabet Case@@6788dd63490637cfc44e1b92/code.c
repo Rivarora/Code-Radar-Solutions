@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main(){
+int main(){
     char x;
     scanf("%c",&x);
     if(x>='A' && x<='Z')
