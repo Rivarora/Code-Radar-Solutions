@@ -13,10 +13,10 @@ int main(){
         printf("C");
     }
     else if(x>=60 && x<70){
-        printf("D")
+        printf("D");
     }
     else{
-        printf("F")
+        printf("F");
     }
     return 0;
 }
