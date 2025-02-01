@@ -7,9 +7,12 @@ int main(){
         printf("0");
     }
     else{
-        while(num > 0){
-            printf("%d",num & 1);
-            num=num>>1;
+        int first =0;
+        for(int i=31;i>=0;i--){
+            int bit=(num>>i)&i;
+            if(bit==1||first==1)
+            printf("%d",bit)
+            first=1;
         }
     }
     return 0;
