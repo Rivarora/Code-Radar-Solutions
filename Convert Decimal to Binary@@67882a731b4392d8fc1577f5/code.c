@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    int x;
-    scanf("%d",&x);
+    int num;
+    scanf("%d",&num);
     if(num==0){
         printf("0");
     }
