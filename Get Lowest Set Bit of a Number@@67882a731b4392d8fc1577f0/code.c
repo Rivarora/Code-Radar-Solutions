@@ -2,14 +2,14 @@
 int main(){
 int x,result;
 scanf("%d",&x);
-result = 1;
+result = 0;
 if (x==0){
-    printf(0);
+    printf("-1");
     return 0;
 }
 while((x & 1)==0){
-    x=x >> 1;
-    result=result << 1;
+    x >>= 1;
+    result++;
 }
 printf("%d",result);
 return 0;
