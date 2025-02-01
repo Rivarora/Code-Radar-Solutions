@@ -4,13 +4,13 @@ int main(){
     int x,count;
     count=0;
     scanf("%d",&x);
-    if(num==0){
+    if(x==0){
         printf("32");
         return 0;
     }
-    while((num & (1<<31))==0){
+    while((x & (1<<31))==0){
         count++;
-        num=num<<1;
+        x=x<<1;
     }
     printf("%d",count);
     return 0;
