@@ -7,13 +7,18 @@ int main(){
         printf("0");
     }
     else{
-        int first =0;
-        for(int i=31;i>=0;i--){
-            int bit=(num>>i) & 1;
-            if(bit ==1 || first == 1);
-            printf("%d",bit);
-            first=1;
+        int binary[32];
+        int i=0;
+        while(num>0){
+            binary[i]=num&1;
+            num=num>>1;
+            i++;
         }
+        for(int j=i-1;j>=0;j--){
+            printf("%d",binary[j]);
+        }
+           
+        }
+        return 0;
     }
-    return 0;
-}
+    
