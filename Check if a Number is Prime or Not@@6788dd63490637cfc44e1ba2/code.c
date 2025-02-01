@@ -1,22 +1,18 @@
 #include <stdio.h>
 
 int main(){
-    int x;
-    scanf("%d",&x);
-    if(x==2){
-        printf("Prime");
-    }
-    else if(x<1){
-        printf("Not Prime");
-    }
-    else if(x==1){
-        printf("Neither Prime nor composite");
-    }
-    else if(x>1 && x/1==0 && x/x==0){
-        printf("Prime");
-    }
-    else{
-        printf("Not Prime");
-    }
-    return 0;
+int num;
+scanf("%d",&num);
+if(num<=1)
+printf("Not Prime");
+else if(num==2 || num==3 || num==5 || num==7){
+    printf("Prime");
+}
+else if(num%2==0 || num%3==0 || num%5==0 || num%7==0){
+    printf("Not Prime");
+}
+else{
+    printf("Prime");
+}
+return 0;
 }
