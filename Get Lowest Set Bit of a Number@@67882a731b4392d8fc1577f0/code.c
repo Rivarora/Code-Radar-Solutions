@@ -8,5 +8,5 @@ while((num & 1)==0){
     result=result*2;
 }
 printf("%d",result);
-
+return 0;
 }
