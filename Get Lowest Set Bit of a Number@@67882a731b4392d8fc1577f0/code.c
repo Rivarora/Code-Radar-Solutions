@@ -8,7 +8,7 @@ if (x==0){
 }
 while((x & 1)==0){
     x=x>>1;
-    result=result*2;
+    result=result<<1;
 }
 printf("%d",result);
 return 0;
