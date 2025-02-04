@@ -8,14 +8,14 @@ int main(){
         if(c='+'){
            add=a+b;
            printf("%d",add);}
-        else if(c=='-'){
+        else if(c='-'){
             sub=a-b;
             printf("%d",sub);
         }
-        else if(c=='*'){
+        else if(c='*'){
             mul=a*b;
             printf("%d",mul); }
-        else if(c=='/'){
+        else if(c='/'){
             div=a/b;
             printf("%d",div);
         }
