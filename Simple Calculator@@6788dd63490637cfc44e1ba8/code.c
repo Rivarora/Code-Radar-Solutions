@@ -8,7 +8,7 @@ int main(){
         if(c='+'){
            add=a+b;
            printf("%d",add);
-           break;
+           
            }
         else if(c='-'){
             sub=a-b;
