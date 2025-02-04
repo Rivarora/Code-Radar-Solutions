@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 int main(){
-    int a,b,add,sub,mul,div;
+    float a,b,add,sub,mul,div;
     char c;
     scanf("%d%d%c",&a,&b,&c);
-        if(c='+'){
+        if(c=='+'){
            add=a+b;
-           printf("%d",add);}
+           printf("%f",add);}
         else if(c=='-'){
             sub=a-b;
-            printf("%d",sub);
+            printf("%f",sub);
         }
         else if(c=='*'){
             mul=a*b;
-            printf("%d",mul); }
+            printf("%f",mul); }
         else if(c=='/'){
             div=a/b;
-            printf("%d",div);
+            printf("%f",div);
         }
         else{
             printf("error");
