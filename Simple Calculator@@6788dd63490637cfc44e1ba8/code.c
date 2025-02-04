@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    float a,b;
+    int a,b;
     int add,sub,mul,div;
     char c;
-    scanf("%f %f%c",&a,&b,&c);
+    scanf("%d %d%c",&a,&b,&c);
         if(c == '+'){
            add=a+b;
            printf("%d",add);
