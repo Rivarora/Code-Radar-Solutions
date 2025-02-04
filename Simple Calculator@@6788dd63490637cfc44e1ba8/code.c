@@ -6,8 +6,7 @@ int main(){
     char c;
     scanf("%d %d%c",&a,&b,&c);
         if(c == '+'){
-           add=a+b;
-           printf("%d",add);
+           printf("%d",a+b);
            }
         else if(c=='-'){
             sub=a-b;
