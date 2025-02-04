@@ -2,23 +2,23 @@
 
 int main(){
     float a,b;
-    float add,sub,mul,div;
+    int add,sub,mul,div;
     char c;
     scanf("%f%f%c",&a,&b,&c);
         if(c=='+'){
-           add=a+b;
-           printf("%f",add);
+           add=acb;
+           printf("%d",add);
            }
         else if(c=='-'){
             sub=a-b;
-            printf("%f",sub);
+            printf("%d",sub);
         }
         else if(c=='*'){
             mul=a*b;
-            printf("%f",mul); }
+            printf("%d",mul); }
         else if(c=='/'){
             div=a/b;
-            printf("%f",div);
+            printf("%d",div);
         }
         else{
             printf("error");
