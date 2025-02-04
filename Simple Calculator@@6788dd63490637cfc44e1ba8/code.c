@@ -17,9 +17,13 @@ int main(){
             mul=a*b;
             printf("%d",mul); }
         else if(c=='/'){
+            if(b == 0){
+                printf("error");
+            }
+            else{
             div=a/b;
             printf("%d",div);
-        }
+        }}
         else{
             printf("error");
         }
