@@ -8,5 +8,6 @@ int main(){
     while(v=='a',v=='e',v=='i',v=='o',v=='u',v=='A',v=='E',v=='I',v=='O',v=='U'){
         count+=1;
     }
+    printf("%d",count);
     return 0;
 }
