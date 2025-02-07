@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    char[20]==v;
+    char v[100];
     int count;
     scanf("%s",&v);
     count=0;
