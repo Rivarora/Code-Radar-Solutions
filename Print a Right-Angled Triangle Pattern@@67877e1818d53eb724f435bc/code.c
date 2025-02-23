@@ -1,5 +1,5 @@
 int main(){
-    int row,column;
+    int row,column,i,j;
     scanf("%d %d",&row,&column);
     for(i=0;i<=row;i++){
         for(j=0;j<=column;j++){
