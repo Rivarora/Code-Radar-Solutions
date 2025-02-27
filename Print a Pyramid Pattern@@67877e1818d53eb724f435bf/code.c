@@ -2,18 +2,13 @@
 int main(){
     int N,i,j,C,sp;
     scanf("%d",&N);
-    C=N+(N-1);
     for(i=1;i<=N;i++){
         for(sp=1;sp<=N-i;sp++){
             printf(" ");
         }
-        for(j=1;j<=C;j++){
-            if(j<=2*i-1){
+        for(j=1;j<=2*i-1;j++){
                 printf("*");
-            }
-            else{
-                printf(" ");
-            }
-        }
+            
+                   }
         printf("\n");
     }}
