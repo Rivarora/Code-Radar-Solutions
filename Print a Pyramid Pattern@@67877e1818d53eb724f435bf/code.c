@@ -2,7 +2,7 @@
 int main(){
     int N,i,j,C,sp;
     scanf("%d",&N);
-    C=R+(N-1);
+    C=N+(N-1);
     for(i=1;i<=N;i++){
         for(sp=1;sp<=N-1;sp++){
             printf(" ");
