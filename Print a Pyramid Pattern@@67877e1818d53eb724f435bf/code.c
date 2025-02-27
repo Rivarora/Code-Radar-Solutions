@@ -8,7 +8,7 @@ int main(){
             if(j==R){
                 printf("* ");
             }
-            else if(R-1<=j<=R+1){
+            else if(i-1<=j<=i+1){
                 printf("* ");
             }
             else{
