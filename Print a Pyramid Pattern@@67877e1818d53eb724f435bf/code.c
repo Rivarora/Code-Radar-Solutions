@@ -1,21 +1,19 @@
 #include <stdio.h>
 int main(){
-    int N,i,j;
-    scanf("%d",&N);
-    for(i=1;i<=N;i++){
-        for(j=1;j<=N;j++){
+    int R,i,j;
+    scanf("%d",&R);
+    C=R+(R-1);
+    for(i=R;i<=R;i++){
+        for(j=C;j<=C;j++){
             if(j==i){
                 printf("* ");
             }
-            else if(i-1<=j<=i+1){
+            else if(i--<=j<=i++){
                 printf("* ");
-
             }
             else{
                 printf(" ");
             }
         }
         printf("\n");
-    }
-    return 0;
-}
+    }}
