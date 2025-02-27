@@ -4,8 +4,12 @@ int main(){
     scanf("%d",&N);
     for(i=1;i<=N;i++){
         for(j=3+i;j<=5-i;j++){
-            if(5-i<=j<=3+i){
+            if(j==i){
                 printf("*");
+            }
+            else if(i<=j<=i++){
+                printf("* ");
+
             }
             else{
                 printf(" ");
