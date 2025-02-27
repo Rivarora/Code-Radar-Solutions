@@ -5,10 +5,7 @@ int main(){
     C=R+(R-1);
     for(i=1;i<=R;i++){
         for(j=1;j<=C;j++){
-            if(j==R){
-                printf("* ");
-            }
-            else if(i-1<=j<=i+1){
+            if(j%2!=0){
                 printf("* ");
             }
             else{
