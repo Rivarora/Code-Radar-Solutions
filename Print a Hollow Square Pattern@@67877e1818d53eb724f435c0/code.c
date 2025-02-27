@@ -5,7 +5,7 @@ void main(){
     int mid_value=(N/2)+1;
     for(i=1;i<=N;i++){
         for(j=1;j<=N;j++){
-            if(i<=j){
+            if(i==j){
                 printf("* ");
             }
             else if(mid_value){
