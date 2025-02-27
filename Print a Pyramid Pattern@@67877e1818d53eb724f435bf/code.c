@@ -3,8 +3,8 @@ int main(){
     int R,i,j,C;
     scanf("%d",&R);
     C=R+(R-1);
-    for(i=R;i<=R;i++){
-        for(j=C;j<=C;j++){
+    for(i=1;i<=R;i++){
+        for(j=1;j<=C;j++){
             if(j==i){
                 printf("* ");
             }
