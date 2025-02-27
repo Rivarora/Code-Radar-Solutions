@@ -7,7 +7,7 @@ int main(){
             if(j==i){
                 printf("*");
             }
-            else if(i--<=j<=i++){
+            else if(i-1<=j<=i+1){
                 printf("* ");
 
             }
