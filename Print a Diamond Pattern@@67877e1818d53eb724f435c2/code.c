@@ -11,7 +11,7 @@ int main(){
             
                    }
         for(i=N-1;i>=1;i--){
-        printf("*");
+        printf("*");}
         printf("\n");
     
     
