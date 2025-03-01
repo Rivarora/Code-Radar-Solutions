@@ -7,10 +7,10 @@ void main(){
             printf(" ");
         }
         for(j=1;j<=i;j++){
-            printf("%d ",p);
+            printf("%d ",j);
         }
         printf("\n");
-        p++;
+        j++;
     }
     
     
