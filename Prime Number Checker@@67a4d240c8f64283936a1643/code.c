@@ -1,15 +1,15 @@
-int isPrime(){
-int num;
-scanf("%d",&num);
-if(num==2 || num==3 || num==5 || num==7){
-    printf("1");
-}
-else if(num%2==0 || num%3==0 || num%5==0 || num%7==0){
-    printf("0");
-}
-else{
-    printf("1");
-}
-return 0;
+int isPrime(int num) {
+    if(num < 2) {
+        return 0; // Numbers less than 2 are not prime
+    }
+    
+    // Check if the number is divisible by any number other than 1 and itself
+    for(int i = 2; i <= num/2; i++) {
+        if(num % i == 0) {
+            return 0; // Not a prime number
+        }
+    }
+    
+    return 1; // Prime number
 }
 
