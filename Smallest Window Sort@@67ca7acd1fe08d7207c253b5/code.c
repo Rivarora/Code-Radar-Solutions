@@ -9,7 +9,6 @@ int  findUnsortedSubarray(int arr[], int n) {
 
     // If array is already sorted
     if (left == n - 1) {
-        printf("Array is already sorted\n");
         return 0;
     }
 
