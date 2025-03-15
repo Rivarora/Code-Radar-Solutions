@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void findUnsortedSubarray(int arr[], int n) {
+int  findUnsortedSubarray(int arr[], int n) {
     int left = 0, right = n - 1;
 
     // Step 1: Find left boundary
