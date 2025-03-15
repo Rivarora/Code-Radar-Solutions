@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to find the length of the shortest unsorted subarray
 int findUnsortedSubarray(int arr[], int n) {
     int start = -1, end = -1;
 
@@ -26,10 +25,12 @@ int findUnsortedSubarray(int arr[], int n) {
     }
 
     // Find the min and max within the unsorted subarray
-    int minVal = arr[start], maxVal = arr[start];
+    int minVal, maxVal;
     for (int i = start; i <= end; i++) {
-        if (arr[i] < minVal) minVal = arr[i];
-        if (arr[i] > maxVal) maxVal = arr[i];
+        if (arr[i] < arr[start]) 
+        {minVal = arr[i];}
+        if (arr[i] > arr[start]) 
+        {maxVal = arr[i];}
     }
 
     // Expand the subarray to include any numbers that should be in the sorted part
