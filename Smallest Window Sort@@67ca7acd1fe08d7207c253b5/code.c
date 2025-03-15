@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int findUnsortedSubarray(int arr[], int n) {
     int start = -1, end = -1;
 
@@ -11,11 +9,8 @@ int findUnsortedSubarray(int arr[], int n) {
         }
     }
 
-    // If array is already sorted, return 0
-    if (start == -1) {
-        printf("0\n");
-        return 0;
-    }
+    // If already sorted, return 0
+    if (start == -1) return 0;
 
     // Find first out-of-order element from the right
     for (int i = n - 1; i > 0; i--) {
@@ -25,8 +20,20 @@ int findUnsortedSubarray(int arr[], int n) {
         }
     }
 
-    printf("%d\n", end - start + 1);
-    return 0;
+    // Find the min and max within the unsorted subarray
+    int min = arr[start], max = arr[start];
+    for (int i = start; i <= end; i++) {
+        if (arr[i] < min) min = arr[i];
+        if (arr[i] > max) max = arr[i];
+    }
+
+    // Expand start to the left if necessary
+    while (start > 0 && arr[start - 1] > min) start--;
+
+    // Expand end to the right if necessary
+    while (end < n - 1 && arr[end + 1] < max) end++;
+
+    return end - start + 1;
 }
 
     
