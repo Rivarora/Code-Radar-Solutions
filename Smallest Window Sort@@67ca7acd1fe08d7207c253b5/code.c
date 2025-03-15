@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void findSmallestWindow(int arr[], int n) {
+void findUnsortedSubarray(int arr[], int n) {
     int left = 0, right = n - 1;
 
-    // Find the left boundary
+    // Step 1: Find left boundary
     while (left < n - 1 && arr[left] <= arr[left + 1])
         left++;
 
@@ -13,10 +13,23 @@ void findSmallestWindow(int arr[], int n) {
         return;
     }
 
-    // Find the right boundary
+    // Step 2: Find right boundary
     while (right > 0 && arr[right] >= arr[right - 1])
         right--;
 
-    printf("Smallest window to sort: %d to %d\n", left, right);
-}
+    // Step 3: Find min & max in the unsorted subarray
+    int min = arr[left], max = arr[left];
+    for (int i = left; i <= right; i++) {
+        if (arr[i] < min) min = arr[i];
+        if (arr[i] > max) max = arr[i];
+    }
 
+    // Step 4: Expand left boundary
+    while (left > 0 && arr[left - 1] > min)
+        left--;
+
+    // Step 5: Expand right boundary
+    while (right < n - 1 && arr[right + 1] < max)
+        right++;
+
+}
