@@ -24,12 +24,12 @@ int findUnsortedSubarray(int arr[], int n) {
         }
     }
 
-    // Find the min and max within the unsorted subarray
-    int minVal, maxVal;
+    
+    int minVal = arr[start], maxVal = arr[start];
     for (int i = start; i <= end; i++) {
-        if (arr[i] < arr[start]) 
+        if (arr[i] < minVal) 
         {minVal = arr[i];}
-        if (arr[i] > arr[start]) 
+        if (arr[i] > maxVal) 
         {maxVal = arr[i];}
     }
 
