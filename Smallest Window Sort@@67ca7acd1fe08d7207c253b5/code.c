@@ -20,11 +20,3 @@ void findSmallestWindow(int arr[], int n) {
     printf("Smallest window to sort: %d to %d\n", left, right);
 }
 
-int main() {
-    int arr[] = {1, 3, 5, 4, 2, 6, 7};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    findSmallestWindow(arr, n);
-
-    return 0;
-}
