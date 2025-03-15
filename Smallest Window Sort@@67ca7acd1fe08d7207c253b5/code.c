@@ -28,8 +28,10 @@ int  findUnsortedSubarray(int arr[], int n) {
         left--;
 
     // Step 5: Expand right boundary
-    while (right < n - 1 && arr[right + 1] < max)
-        right++;
-        return left - right +1;
+    while (right < n - 1 && arr[right + 1] < max){
+        right++;}
+         return left - right +1;
+       
 
 }
+ 
