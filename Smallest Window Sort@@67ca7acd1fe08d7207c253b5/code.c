@@ -10,7 +10,7 @@ int  findUnsortedSubarray(int arr[], int n) {
     // If array is already sorted
     if (left == n - 1) {
         printf("Array is already sorted\n");
-        return;
+        return 0;
     }
 
     // Step 2: Find right boundary
