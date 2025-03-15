@@ -25,21 +25,7 @@ int findUnsortedSubarray(int arr[], int n) {
     }
 
     
-    int minVal = arr[start], maxVal = arr[start];
-    for (int i = start; i <= end; i++) {
-        if (arr[i] < minVal) 
-        {minVal = arr[i];}
-        if (arr[i] > maxVal) 
-        {maxVal = arr[i];}
-    }
-
-    // Expand the subarray to include any numbers that should be in the sorted part
-    while (start > 0 && arr[start - 1] > minVal) {
-        start--;
-    }
-    while (end < n - 1 && arr[end + 1] < maxVal) {
-        end++;
-    }
+    
 
     return end - start + 1;
 }
