@@ -1,11 +1,22 @@
 #include <stdio.h>
 
-// Function to find the index of the target element
+// Function to perform binary search
 int binarySearch(int arr[], int n, int target) {
-    for (int i = 0; i < n; i++) {
-        if (arr[i] == target) {
-            return i; // Return index if found
+    int left = 0, right = n - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2; // Avoids overflow
+
+        if (arr[mid] == target) {
+            return mid; // Found the target, return index
+        }
+        else if (arr[mid] < target) {
+            left = mid + 1; // Search right half
+        }
+        else {
+            right = mid - 1; // Search left half
         }
     }
-    return -1; // Return -1 if not found
+
+    return -1; // Target not found
 }
