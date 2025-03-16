@@ -10,12 +10,10 @@ void kthSmalledt(int arr[], int n) {
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
+            
         }
+        sortArray(arr, n);  // Sort the array
+    return arr[k - 1]; 
     }
 }
 
-// Function to find the k-th smallest element
-int findKthSmallest(int arr[], int n, int k) {
-    sortArray(arr, n);  // Sort the array
-    return arr[k - 1];  // Return the k-th smallest element
-}
