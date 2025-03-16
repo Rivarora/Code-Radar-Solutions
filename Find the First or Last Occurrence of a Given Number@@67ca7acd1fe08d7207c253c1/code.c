@@ -22,7 +22,6 @@ int findOccurrence(int arr[], int size, int target, char occurrenceType[]) {
             }
         }
     } else {
-        printf("Invalid input! Please enter 'first' or 'last'.\n");
         return -1;
     }
 
