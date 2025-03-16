@@ -22,7 +22,7 @@ int isPrime(int num) {
 void printPrimesInRange(int start, int end) {
     int found = 0; // Flag to check if at least one prime is found
 
-    printf("%d ", start, end);
+    printf("%d ", end);
     
     for (int i = start; i <= end; i++) {
         if (isPrime(i)) {
