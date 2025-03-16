@@ -3,7 +3,7 @@ int printfPrimesInRange(int a,b){
     if(i<2){
         return 0;
     }
-    for(int j=2;j<=b;i++){
+    for(int j=2;j<=b;j++){
         if(j%i==0){
             return 0;
         }
