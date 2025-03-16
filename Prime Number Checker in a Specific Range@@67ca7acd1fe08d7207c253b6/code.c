@@ -19,12 +19,10 @@ int isPrime(int num) {
 }
 
 // Function to print prime numbers in a given range
-void printPrimesInRange(int start, int end) {
+void printPrimesInRange(int a, int b) {
     int found = 0; // Flag to check if at least one prime is found
-
-    printf("%d ", end);
     
-    for (int i = start; i <= end; i++) {
+    for (int i = a; i <= b; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
             found = 1; // Mark that at least one prime number is found
@@ -37,8 +35,6 @@ void printPrimesInRange(int start, int end) {
     
     printf("\n");
 }
-
-
 
     
     
