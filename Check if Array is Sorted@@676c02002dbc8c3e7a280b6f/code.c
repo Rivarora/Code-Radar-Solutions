@@ -1,5 +1,5 @@
 int main(){
-    int n,i;
+    int n,i,flag=1;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++){
@@ -7,7 +7,7 @@ int main(){
     }
     for(i=0;i<n-1;i++){
         if(arr[i]<arr[i+1]){
-            int flag=0;
+             flag=0;
             break;
         }
     }
