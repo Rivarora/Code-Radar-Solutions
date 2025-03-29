@@ -7,10 +7,13 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(i=0;i<N;i++){
-        temp=arr[i];
-        arr[i]=arr[i+1];
-        arr[i+1]=temp;
+        for(int j=0;j<N-i-1;j++){
+            temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+        }
     }
-    printf("%d",arr[i+1]);
-
+    int sorted=arr[j];
+    int sorted=arr[N-2];
+    printf("%d",sorted);
 }
