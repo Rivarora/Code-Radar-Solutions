@@ -9,7 +9,7 @@ int main(){
     int largest=arr[0],second_largest=arr[0];
     for(i=0;i<N;i++){
         if(arr[i]>largest){
-            largest=array[i];
+            largest=arr[i];
         }
         if(arr[i]>second_largest && arr[i]<largest){
             second_largest=arr[i];
