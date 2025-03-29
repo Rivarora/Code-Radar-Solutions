@@ -1,20 +1,26 @@
 #include <stdio.h>
 int main(){
-    int N,freq=0,visited=0,i;
+    int N,i;
     scanf("%d",&N);
     int arr[N];
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    int initial=arr[0];
     for(i=0;i<N;i++){
-        if(initial==arr[i]){
-            freq+=1;
-        }
-        else{
-            initial++;
+        int count=1;
+        if(arr[i]==arr[j]){
+            count=0;
+            break;
         }
     }
-    printf("%d %d",arr[i],freq);
+    if(count==0){
+        continue;
+    }
+    for(j=i+1;i<N;j++){
+        if(arr[i]==arr[j]){
+            count++;
 
+        }
+    }
+    printf("%d %d",arr[i],count);
 }
