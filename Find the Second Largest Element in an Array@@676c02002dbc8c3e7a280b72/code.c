@@ -10,7 +10,8 @@ int main(){
     for(i=0;i<N;i++){
         if(arr[i]>largest){
             largest=arr[i];
-        }
+        }}
+        for(i=0;i<N;i++){
         if(arr[i]>second_largest && arr[i]<largest){
             second_largest=arr[i];
         }
