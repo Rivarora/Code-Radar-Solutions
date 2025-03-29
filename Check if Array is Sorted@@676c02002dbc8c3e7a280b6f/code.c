@@ -14,13 +14,13 @@ int main() {
     }
     for(i=0;i<n-1;i++){
         if(arr[i]<=arr[i+1]){
-            flag=0;
+            flag=1;
         }
     }
-    if(flag==0){
-        printf("Not Sorted");
+    if(flag==1){
+        printf("Sorted");
     }
     else{
-        printf("Sorted");
+        printf("Not Sorted");
     }
 }
