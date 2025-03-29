@@ -32,7 +32,7 @@ int main() {
     if (largest == secondLargest) {
         printf("-1");
     } else {
-        printf(""%d", secondLargest);
+        printf("%d", secondLargest);
     }
 
     return 0;
