@@ -7,10 +7,10 @@ int main(){
     scanf("%d",&arr[i]);}
     int even=0,odd=0;
     for(i=0;i<N;i++){
-        if(i%2==0){
+        if(arr[i]%2==0){
             even+=1;     
        }
-       else if(i%2!=0){
+       else{
         odd+=1;
        }
     }
