@@ -14,7 +14,8 @@ int main(){
         if(arr[i]>second_largest && arr[i]<largest){
             second_largest=arr[i];
         }
-        printf("%d",second_largest);
+
     }
+    printf("%d",second_largest);
     
 }
