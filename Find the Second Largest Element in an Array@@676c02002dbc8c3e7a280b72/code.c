@@ -14,6 +14,6 @@ int main(){
         }
     }
     int sorted=arr[j];
-    int sorted=arr[N-2];
-    printf("%d",sorted);
+    int result=arr[N-2];
+    printf("%d",result);
 }
