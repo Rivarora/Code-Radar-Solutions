@@ -15,7 +15,7 @@ int main() {
 
     // Check if the array is sorted in descending order
     for (i = 0; i < n - 1; i++) {
-        if (arr[i] <= arr[i + 1]) {  // Found an increasing order → Not sorted
+        if (arr[i] > arr[i + 1]) {  // Found an increasing order → Not sorted
             flag = 0;
             break;  // Exit early
         }
