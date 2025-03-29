@@ -6,15 +6,15 @@ int main(){
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
+    int largest=arr[0],second_largest=arr[0];
     for(i=0;i<N;i++){
-        for(j=0;j<N-i-1;j++){
-            temp=arr[j];
-            arr[j]=arr[j+1];
-            arr[j+1]=temp;
+        if(arr[i]>largest){
+            largest=array[i];
         }
+        if(arr[i]>second_largest && arr[i]<largest){
+            second_largest=arr[i];
+        }
+        printf("%d",second_largest);
     }
-    int sorted=arr[j];
-    for(i=N;i>=0;i--){
-        printf("%d",arr[N-2]);
-    }
+    
 }
