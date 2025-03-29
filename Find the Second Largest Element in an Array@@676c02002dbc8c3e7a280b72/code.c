@@ -30,9 +30,9 @@ int main() {
     }
 
     if (largest == secondLargest) {
-        printf("No second largest element\n");
+        printf("-1");
     } else {
-        printf("Second Largest: %d\n", secondLargest);
+        printf(""%d", secondLargest);
     }
 
     return 0;
