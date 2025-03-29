@@ -23,9 +23,9 @@ int main() {
 
     // Output result
     if (flag == 0) {
-        printf("Sorted");  // Descending order
+        printf("Not Sorted");  // Descending order
     } else {
-        printf("Not Sorted");  // Not in descending order
+        printf("Sorted");  // Not in descending order
     }
 
     return 0;
