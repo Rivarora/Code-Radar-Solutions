@@ -22,7 +22,7 @@ int main() {
     }
 
     // Output result
-    if (flag == 1) {
+    if (flag == 0) {
         printf("Sorted");  // Descending order
     } else {
         printf("Not Sorted");  // Not in descending order
