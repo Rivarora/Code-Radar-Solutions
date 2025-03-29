@@ -20,7 +20,7 @@ int trackPlayerRanks(int ranked[],int n,int player[],int m,int result[]){
             result[j]=1;
         }
         else{
-            result[j]=ranks+1;
+            result[j]=ranks[i]+1;
         }
     }
 }
