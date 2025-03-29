@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, flag = 1;
+    int n, i, flag = 1; // Assume array is sorted initially
 
     // Input the number of elements
     scanf("%d", &n);
@@ -12,16 +12,21 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    for(i=0;i<n-1;i++){
-        if(arr[i]<=arr[i+1]){
-            flag=0;
-            break;
+
+    // Check if the array is sorted in descending order
+    for (i = 0; i < n - 1; i++) {
+        if (arr[i] <= arr[i + 1]) {  // Found an increasing order → Not sorted
+            flag = 0;
+            break;  // Exit early
         }
     }
-    if(flag==1){
-        printf("Sorted");
+
+    // Output result
+    if (flag == 1) {
+        printf("Sorted");  // Descending order
+    } else {
+        printf("Not Sorted");  // Not in descending order
     }
-    else{
-        printf("Not Sorted");
-    }
+
+    return 0;
 }
