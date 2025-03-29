@@ -12,10 +12,10 @@ int main(){
             count=0;
             break;
         }
-    }
+    
     if(count==0){
         continue;
-    }
+    }}
     for(j=i+1;i<N;j++){
         if(arr[i]==arr[j]){
             count++;
