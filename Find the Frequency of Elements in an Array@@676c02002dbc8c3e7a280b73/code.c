@@ -15,5 +15,6 @@ int main(){
             initial++;
         }
     }
+    printf("%d %d",N,freq);
 
 }
