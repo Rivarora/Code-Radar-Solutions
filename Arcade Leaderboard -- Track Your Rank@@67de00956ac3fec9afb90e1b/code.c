@@ -1,26 +1,26 @@
 #include <stdio.h>
-
-// Function to calculate player ranks using Dense Ranking
-void trackPlayerRanks(int ranked[], int n, int player[], int m, int result[]) {
-    int ranks[n], rank = 1;
-
-    // Assign ranks to leaderboard scores
-    ranks[0] = rank;
-    for (int i = 1; i < n; i++) {
-        if (ranked[i] == ranked[i - 1]) {
-            ranks[i] = rank;  // Same score → same rank
-        } else {
+int trackPlayerRanks(int ranked[],int n,int player[],int m,int result[]){
+    int rank[n],rank=1;
+    ranks[0]=rank;
+    for(i=1;i<n;i++){
+        if(ranks[i]==ranks[i-1]){
+            ranks[i]=rank;
+        }
+        else{
             rank++;
-            ranks[i] = rank;  // Different score → next rank
+            ranks[i]=rank;
         }
     }
-
-    // Determine player ranks
-    int i = n - 1;  // Start from lowest leaderboard score
-    for (int j = 0; j < m; j++) {
-        while (i >= 0 && player[j] >= ranked[i]) {
-            i--;  // Move up the leaderboard
+    int i=n-1;
+    for(int j=0;j<n;j++){
+        while(i>=0 && player[j]>ranked[i]){
+            i--;
         }
-        result[j] = (i == -1) ? 1 : ranks[i] + 1;
+        if(rank==-1){
+            result[j]=1;
+        }
+        else{
+            result[j]=ranks+1;
+        }
     }
 }
