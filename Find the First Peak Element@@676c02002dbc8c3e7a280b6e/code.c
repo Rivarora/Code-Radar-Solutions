@@ -24,4 +24,7 @@ int main(){
             printf("%d",arr[N-1]);
             return 0;
         }
+        else{
+            printf("-1");
+        }
     }
