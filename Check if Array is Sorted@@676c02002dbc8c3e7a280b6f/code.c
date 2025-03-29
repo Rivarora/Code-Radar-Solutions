@@ -18,7 +18,6 @@ int main() {
         }
         return 0;
     }
-else{
-    printf("Not Sorted");
-}
+printf("Not Sorted");
+
 }
