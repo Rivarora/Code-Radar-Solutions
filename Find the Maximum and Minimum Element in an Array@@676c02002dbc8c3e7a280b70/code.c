@@ -1,22 +1,36 @@
 #include <stdio.h>
-#include <limits.h>
-int main(){
-    int N,i;
-    scanf("%d",&N);
-    int arr[N];
-    for(i=0;i<N;i++){
-        scanf("%d",&arr[i]);
+#include <limits.h>  // For INT_MIN and INT_MAX
+
+int main() {
+    int n, i;
+
+    // Input the number of elements
+    scanf("%d", &n);
+
+    int arr[n];
+
+    // Input the array elements
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
+
+    // Initialize max and min with extreme values
     int max = INT_MIN;
     int min = INT_MAX;
 
-    for(i=0;i<N;i++){
-        if(arr[i]>max){
-            max=arr[i];
+    // Find max and min
+    for (i = 0; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];     // Update max if current element is larger
         }
-        else if(arr[i]<min){
-            min=arr[i];
+        if (arr[i] < min) {
+            min = arr[i];     // Update min if current element is smaller
         }
     }
-    printf("%d %d",max,min);
+
+    // Print the results
+    printf("Maximum: %d\n", max);
+    printf("Minimum: %d\n", min);
+
+    return 0;
 }
