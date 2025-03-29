@@ -15,6 +15,6 @@ int main(){
     }
     int sorted=arr[j];
     for(i=N;i>=0;i--){
-        printf("%d",arr[i-2]);
+        printf("%d",arr[N-2]);
     }
 }
