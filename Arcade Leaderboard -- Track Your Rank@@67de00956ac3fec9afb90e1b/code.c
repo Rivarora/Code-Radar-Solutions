@@ -1,10 +1,13 @@
-int trackPlayerRanks(int ranked,int player,int result,int n,int m){
-    int i,j;
-    for(i=0;i<n;i++){
-        for(j=0;j<m;j++){
-            if(ranked[i]>ranked[i+1]){
-                result=player[i];
-            }
+#include <stdio.h>
+
+// Function to find the player's rank
+int findRank(int ranked[], int n, int score) {
+    int rank = 1;
+    
+    for (int i = 0; i < n; i++) {
+        if (score < ranked[i]) {
+            rank++;
         }
-}
+    }
+    return rank;
 }
