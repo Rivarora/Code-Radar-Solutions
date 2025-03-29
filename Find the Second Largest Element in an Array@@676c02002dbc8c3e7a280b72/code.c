@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main(){
     int N,temp;
     scanf("%d",&N);
