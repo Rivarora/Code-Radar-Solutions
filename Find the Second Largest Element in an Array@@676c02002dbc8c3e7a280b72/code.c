@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>  // For INT_MIN
 
 int main() {
     int N, i;
@@ -14,27 +13,32 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int largest = INT_MIN, secondLargest = INT_MIN;
-
-    // Find the largest element
-    for (i = 0; i < N; i++) {
-        if (arr[i] > largest) {
-            largest = arr[i];
-        }
+    // Handle edge case of single element array
+    if (N < 2) {
+        printf("No second largest element\n");
+        return 0;
     }
 
-    // Find the second largest element
-    for (i = 0; i < N; i++) {
-        if (arr[i] > secondLargest && arr[i] < largest) {
+    int largest = arr[0];
+    int secondLargest = arr[0];
+
+    // Find the largest and second largest elements
+    for (i = 1; i < N; i++) {
+        if (arr[i] > largest) {
+            secondLargest = largest;    // Update second largest
+            largest = arr[i];           // Update largest
+        } else if (arr[i] > secondLargest && arr[i] != largest) {
             secondLargest = arr[i];
         }
     }
 
-    if (secondLargest == INT_MIN) {
-        printf("No second largest element\n");
+    // Check if second largest exists
+    if (largest == secondLargest) {
+        printf("-1");
     } else {
-        printf("Second Largest: %d\n", secondLargest);
+        printf("%d", secondLargest);
     }
 
     return 0;
 }
+
