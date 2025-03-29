@@ -15,7 +15,7 @@ int main() {
 
     // Handle edge case of single element array
     if (N < 2) {
-        printf("No second largest element\n");
+        printf("-1");
         return 0;
     }
 
