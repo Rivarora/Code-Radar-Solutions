@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main(){
     int N,freq=0,visited=0;
     scanf("%d",&N);
