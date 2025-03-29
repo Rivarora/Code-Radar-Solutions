@@ -12,7 +12,7 @@ int main(){
             count=0;
             break;
         }
-    }
+    
     if(count==0){
         continue;
     }
@@ -23,4 +23,4 @@ int main(){
         }
     }
     printf("%d %d",arr[i],count);
-}
+}}
