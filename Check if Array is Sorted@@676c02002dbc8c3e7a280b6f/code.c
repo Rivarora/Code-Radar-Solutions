@@ -15,9 +15,10 @@ int main() {
     for(i=0;i<n-1;i++){
         if(arr[i]<=arr[i+1]){
             flag=0;
+            breaak;
         }
     }
-    if(flag==1){
+    if(flag==0){
         printf("Sorted");
     }
     else{
