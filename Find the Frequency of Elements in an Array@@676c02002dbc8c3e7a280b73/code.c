@@ -15,6 +15,6 @@ int main(){
             initial++;
         }
     }
-    printf("%d %d",N,freq);
+    printf("%d %d",arr[i],freq);
 
 }
