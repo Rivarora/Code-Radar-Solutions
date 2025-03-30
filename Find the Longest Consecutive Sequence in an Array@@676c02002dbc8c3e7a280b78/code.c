@@ -30,7 +30,7 @@ int main() {
             count++;
         } else {
             if (count > maxCount) maxCount = count;
-            
+            count = 1;
         }
     }
 
@@ -39,6 +39,7 @@ int main() {
     printf("%d", maxCount);
     return 0;
 }
+
 
 
  
