@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <limits.h>
 int main(){
-    int N,i,maxeven=-1;
+    int N,i,maxeven=INT_MIN;
     scanf("%d",&N);
     int arr[N];
     for(i=0;i<N;i++){
@@ -11,5 +12,10 @@ int main(){
             maxeven=arr[i];
         }
     }
-    printf("%d",maxeven);
+    if(maxeven==INT_MIN){
+        printf("-1");
+    }
+    else{
+        printf("%d",maxeven);
+    }
     }
