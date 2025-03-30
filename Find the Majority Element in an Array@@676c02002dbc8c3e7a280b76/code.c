@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int N,freq,i,j;
+    int N,freq,i,j,majority;
     scanf("%d",&N);
     int arr[N];
     for(i=0;i<N;i++){
@@ -14,9 +14,11 @@ int main(){
         }}
     }
     if(freq>N/2){
-        printf("%d ",arr[i]);
+        majority=arr[i];
+        break;
     }
     else{
         printf("-1");
     }
+    printf("%d",majority);
 }
