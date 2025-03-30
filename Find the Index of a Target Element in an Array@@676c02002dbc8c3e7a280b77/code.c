@@ -13,7 +13,7 @@ int main(){
           }
     }
     if(flag==1){
-        printf("%d",i);
+        printf("%d",arr[i]);
     }
     else{
         printf("-1");
