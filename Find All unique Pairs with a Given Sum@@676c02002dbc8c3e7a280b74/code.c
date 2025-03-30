@@ -12,16 +12,21 @@ int main() {
     scanf("%d", &check);
 
     for (i = 0; i < N; i++) {
-        for (j = i + 1; j < N; j++) { // j starts from i+1 to avoid duplicate pairs
+        for (j = i + 1; j < N; j++) { 
             if (arr[i] + arr[j] == check) {
-                printf("%d %d\n", arr[i], arr[j]);
-                  // Mark that at least one pair is found
+                if (found == 0 || (arr[i] != arr[i - 1] || arr[j] != arr[j - 1])) {
+                    printf("%d %d\n", arr[i], arr[j]);
+                    found = 1; 
+                }
             }
         }
     }
 
-
+    if (!found) {
+        printf("-1");  
+    }
 
     return 0;
 }
+
 
