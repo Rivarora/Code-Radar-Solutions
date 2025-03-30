@@ -1,15 +1,20 @@
 #include <stdio.h>
-int main(){
-    int N,i,sum;
-    scanf("%d",&N);
+
+int main() {
+    int N, i, sum = 0;
+    scanf("%d", &N);
     int arr[N];
-    for(i=0;i<N;i++){
-        scanf("%d",&arr[i]);
+
+    // Input the array elements
+    for(i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
     }
-    for(i=0;i<N;i++){
-        sum=arr[i]+arr[i+1];
+
+    // Calculate and print the running sum
+    for(i = 0; i < N; i++) {
+        sum += arr[i];  // Add current element to the running sum
+        printf("%d ", sum);  // Print the running sum
     }
-    for(i=0;i<N;i++){
-        printf("%d ",sum);
-    }
+
+    return 0;
 }
