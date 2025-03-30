@@ -3,11 +3,11 @@ int main(){
     int N,i;
     scanf("%d",&N);
     if(N==1){
-        printf("%d",N);
+        printf("%d",arr[0]);
         return 0;
     }
     int arr[N];
-    for(i=0;i<N;i++){
+    for(i=0;i<N-1;i++){
         scanf("%d",&arr[i]);
     }
     if(arr[i]>arr[i-1]){
