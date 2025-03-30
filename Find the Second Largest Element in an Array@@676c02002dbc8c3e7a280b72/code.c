@@ -9,8 +9,8 @@ int main(){
     second=large=-1000000;
     for(i=0;i<N-1;i++){
         if(arr[i]>large){
-            large=arr[i];
             second=large;
+            large=arr[i];
         }
         else if(arr[i]>second && arr[i]!=large){
             second=arr[i];
