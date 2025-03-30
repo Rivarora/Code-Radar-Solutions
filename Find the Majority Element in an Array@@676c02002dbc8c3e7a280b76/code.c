@@ -15,7 +15,7 @@ int main(){
     }
     if(freq>N/2){
         majority=arr[i];
-        break;
+        return 0;
     }
     else{
         printf("-1");
