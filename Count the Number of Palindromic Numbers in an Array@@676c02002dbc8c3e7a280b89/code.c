@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int N, i, num, rev, temp, count = 0;
+    int N, i, num, rev, temp, count = 0,r;
     scanf("%d", &N);
     
     int arr[N];
@@ -15,7 +15,8 @@ int main() {
         temp = num;
 
         while (temp > 0) {
-            rev = rev * 10 + temp % 10;
+            r=temp%10;
+            rev = rev * 10 + r;
             temp /= 10;
         }
 
