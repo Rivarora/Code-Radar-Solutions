@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     second=large=-1000000;
-    for(i=0;i<N-1;i++){
+    for(i=0;i<N;i++){
         if(arr[i]>large){
             second=large;
             large=arr[i];
