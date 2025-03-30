@@ -12,6 +12,7 @@ int main() {
         for(j=0;j<N-1;j++){
             if(arr[i]==arr[j]){
                 printf("%d",arr[i]);
+                break;
             }
         }
     }
