@@ -22,7 +22,7 @@ int main() {
     }
 
     // Printing the largest element (which will be at the first index after sorting)
-    printf("%d", arr[0]);
+    printf("%d", arr[1]);
 
     return 0;
 }
