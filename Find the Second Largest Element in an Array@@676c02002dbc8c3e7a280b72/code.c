@@ -13,7 +13,7 @@ int main(){
             large=arr[i];
             second=large;
         }
-        else if(arr[i]>small && arr[i]!=large){
+        else if(arr[i]>second && arr[i]!=large){
             secong=arr[i];
         }
     }
