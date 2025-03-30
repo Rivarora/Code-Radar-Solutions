@@ -12,6 +12,6 @@ int main(){
         printf("%d",arr[i]);
     }
     for(i=0;i<N-k;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
 }
