@@ -28,7 +28,7 @@ int main() {
         if (arr[i] == arr[i - 1]) continue; // Skip duplicates
         if (arr[i] == arr[i - 1] + 1) {
             count++;
-       
+        } 
     }
 
     if (count > maxCount) maxCount = count;
@@ -36,6 +36,7 @@ int main() {
     printf("%d", maxCount);
     return 0;
 }
+
 
 
 
