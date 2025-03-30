@@ -17,10 +17,11 @@ int main(){
             if(diff<0){
             diff=-diff;
         }
-        }
         if(diff<minDiff || (diff==minDiff && arr[i]+arr[j]<num1+num2)){
             minDiff=diff;
         }
+        }
+        
     }
     if(arr[i]>arr[j]){
          num1=arr[j];
