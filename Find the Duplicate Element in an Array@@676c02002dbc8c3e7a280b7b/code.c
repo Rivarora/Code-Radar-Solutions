@@ -8,9 +8,9 @@ int main() {
     for (i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    for(i=0;i<N;i++){
-        for(j=0;j<N;j++){
-            if(arr[i]==arr[j]){
+    for(i=0;i<N-1;i++){
+        for(j=0;j<N-1;j++){
+            if(arr[i]==arr[j] && i!=j){
                 flag=0;
             }
         }
