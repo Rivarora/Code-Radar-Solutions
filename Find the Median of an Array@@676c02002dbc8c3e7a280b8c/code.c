@@ -3,10 +3,6 @@ int main(){
     int N,i,median,j,temp;
     scanf("%d",&N);
     int arr[N];
-    if(N==1){
-        printf("%d",arr[N]);
-        return 0;
-    }
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
@@ -18,7 +14,11 @@ int main(){
             arr[j]=temp;
         }
     }
-    if(N%2==0){
+    if(N==1){
+        printf("%d",arr[i]);
+        return 0;
+    }
+    else if(N%2==0){
         median=(arr[N/2]+arr[N/2-1])/2;
     }
     else{
