@@ -4,8 +4,13 @@
 int main() {
     int N, i, j, minDiff = INT_MAX, num1, num2;
     scanf("%d", &N);
-    int arr[N];
+    
+    if (N < 2) {  // If only one element, print -1
+        printf("-1");
+        return 0;
+    }
 
+    int arr[N];
     for (i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
@@ -26,4 +31,5 @@ int main() {
     printf("%d %d", num1, num2);
     return 0;
 }
+
 
