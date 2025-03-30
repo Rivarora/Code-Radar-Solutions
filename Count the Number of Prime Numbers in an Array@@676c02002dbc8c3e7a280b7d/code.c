@@ -8,7 +8,7 @@ int main(){
     }
     for(i=0;i<N;i++){
         flag=1;
-        if(arr[i]<1){
+        if(arr[i]<2){
             flag=0;
         }
         for(j=2;i<arr[i];j++){
