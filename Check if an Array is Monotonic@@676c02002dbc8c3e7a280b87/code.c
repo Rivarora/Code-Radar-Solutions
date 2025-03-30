@@ -13,24 +13,18 @@ int main() {
     for (i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-
-    // Check if the array is non-decreasing or non-increasing
-    for (i = 1; i < N; i++) {
-        if (arr[i] < arr[i - 1]) {
-            increasing = 0;  // If we find a decrease, it's not increasing
+    for(i=0;i<N;i++){
+        if(arr[i]>arr[i-1]){
+               decreasing=0;
         }
-        if (arr[i] > arr[i - 1]) {
-            decreasing = 0;  // If we find an increase, it's not decreasing
+        else(arr[i]<arr[i-1]){
+            increasing=0;
         }
     }
-
-    // If either increasing or decreasing is true, it's a monotonic array
-    if (increasing || decreasing) {
-        printf("YES\n");
-    } else {
-        printf("NO\n");
+    if(increasing||decreasing){
+        printf("YES");
     }
-
-    return 0;
+    else{
+        printf("NO");
+    }
 }
-
