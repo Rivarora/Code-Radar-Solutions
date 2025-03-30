@@ -11,7 +11,11 @@ int bubbleSort(int arr[],int n){
     }
 }
 int printArray(int arr[],int n){
-    int i,temp;
-        printf("%d",temp);
+    int i,temp,flag=0;
+    for(i=0;i<n;i++){
+        flag=1;}
+        if(flag==1){
+            printf("%d",temp);
+        }
     
 }
