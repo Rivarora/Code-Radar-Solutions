@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main(){
-    int N,i;
+    int N,i,second,large;
     scanf("%d",&N);
     int arr[N];
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    int second=large=-1000000;
+    second=large=-1000000;
     for(i=0;i<N-1;i++){
         if(arr[i]>large){
             large=arr[i];
