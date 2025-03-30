@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int N, i,j,flag=0;
+    int N, i,j,flag=1;
     scanf("%d", &N);
     
     int arr[N], leaders[N];  // Array to store leaders
@@ -11,11 +11,11 @@ int main() {
     for(i=1;i<N-1;i++){
         for(j=1;j<N-1;j++){
             if(arr[i]==arr[j]){
-                flag=1;
+                flag=0;
             }
         }
     }
-    if(flag){
+    if(flag==0){
         printf("%d",arr[i]);
     }
     }
