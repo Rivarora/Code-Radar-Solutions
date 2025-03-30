@@ -3,6 +3,7 @@
 int main() {
     int n, i, first, second;
 
+    
     scanf("%d", &n);
 
     if (n < 2) {
@@ -17,9 +18,9 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    first = second = -1000000;  // Use a very small number
+    first = second = arr[0];
 
-    for (i = 0; i < n; i++) {
+    for (i = 1; i < n; i++) {
         if (arr[i] > first) {
             second = first;
             first = arr[i];
@@ -28,7 +29,7 @@ int main() {
         }
     }
 
-    if (second == -1000000) {
+    if (first == second) {
         printf("-1");
     } else {
         printf("%d", second);
@@ -36,5 +37,3 @@ int main() {
 
     return 0;
 }
-
-
