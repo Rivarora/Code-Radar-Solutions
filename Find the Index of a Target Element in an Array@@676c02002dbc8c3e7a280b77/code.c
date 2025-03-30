@@ -7,7 +7,7 @@ int main(){
         printf("%d",&arr[i]);
     }
     scanf("%d",&key);
-    for(i=0;i<n;i++){
+    for(i=0;i<N;i++){
           if(arr[i]==key){
             flag=1;
           }
