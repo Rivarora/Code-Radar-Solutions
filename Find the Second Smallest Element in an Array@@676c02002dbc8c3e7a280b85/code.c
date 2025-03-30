@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int N, i,j,temp;
+    int N, i,j,temp,sorted;
     scanf("%d", &N);
     int arr[N];
 
@@ -18,6 +18,6 @@ int main() {
             }
         }
     }
-    int sorted[i]=temp;
+    sorted[i]=temp;
     printf("%d",sorted[1]);
     }
