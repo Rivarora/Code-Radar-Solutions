@@ -18,9 +18,10 @@ int main(){
                     num1=arr[i];
                     num2=arr[j];
                 }
-                printf("%d %d",num1,num2);
-                return 0;
+                
             }
+            printf("%d %d",num1,num2);
+                return 0;
         }
     }
 }
