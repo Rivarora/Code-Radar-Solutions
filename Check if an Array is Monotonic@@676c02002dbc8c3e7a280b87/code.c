@@ -17,7 +17,7 @@ int main() {
         if(arr[i]>arr[i-1]){
                decreasing=0;
         }
-        else(arr[i]<arr[i-1]){
+        if(arr[i]<arr[i-1]){
             increasing=0;
         }
     }
