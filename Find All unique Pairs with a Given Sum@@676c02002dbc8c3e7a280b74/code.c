@@ -7,11 +7,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&check);
-    for(i=0;i<N;i++){
-        for(j=0;j<N;i++){
+    for(i=0;i<N;j++){
+        for(j=i+1;j<N;i++){
             if(arr[i]+arr[j]==check){
                 printf("%d %d",arr[i],arr[j]);
-                break;
+                return 0;
             }
         }
     }
