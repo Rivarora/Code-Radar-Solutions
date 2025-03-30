@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void compress_string(char* s) {
+void compressString(char* s) {
     int n = strlen(s);
     if (n == 0) return;
 
