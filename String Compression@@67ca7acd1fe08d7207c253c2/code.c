@@ -19,4 +19,11 @@ void compressString(char* str, char* compressed) {
     compressed[index++] = str[n - 1];
     compressed[index++] = count + '0';
     compressed[index] = '\0'; // Null-terminate the compressed string
+    if (strlen(compressed) >= strlen(str)) {
+        printf("Original string: %s\n", str);
+    } else {
+        printf("Compressed string: %s\n", compressed);
+    }
+
+    return 0;
 }
