@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int N, i, max, min;
+    int N, i, max, min,flag=0;
     scanf("%d", &N);
     
     int arr[N];
@@ -20,13 +20,20 @@ int main() {
     for (i = 1; i < N; i++) {  
         if (arr[i] > max) {
             max = arr[i];
+            flag=1;
         }
         if (arr[i] < min) {
             min = arr[i];
+            flag=1;
         }
     }
-
-    printf("%d %d", max, min);
+    if(flag==1){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
+    
 
     return 0;
 }
