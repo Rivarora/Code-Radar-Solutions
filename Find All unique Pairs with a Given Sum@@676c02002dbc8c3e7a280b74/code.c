@@ -16,15 +16,13 @@ int main() {
             if (arr[i] + arr[j] == check) {
                 if (found == 0 || (arr[i] != arr[i - 1] || arr[j] != arr[j - 1])) {
                     printf("%d %d\n", arr[i], arr[j]);
-                    found = 1; 
+                    
                 }
             }
         }
     }
 
-    if (!found) {
-        printf("-1");  
-    }
+    
 
     return 0;
 }
