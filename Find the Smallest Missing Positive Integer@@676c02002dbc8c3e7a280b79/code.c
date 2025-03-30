@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     while(1){
-        int found=0
+        int found=0;
         for(i=0;i<N;i++){
         if(arr[i]==num){
             found=1;
