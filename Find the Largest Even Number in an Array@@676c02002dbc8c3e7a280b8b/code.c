@@ -8,7 +8,7 @@ int main(){
     }
     for(i=0;i<N;i++){
         if(arr[i]%2==0 && arr[i]>maxeven){
-            maxeven=arr[i]
+            maxeven=arr[i];
         }
         printf("%d",maxeven);
     }
