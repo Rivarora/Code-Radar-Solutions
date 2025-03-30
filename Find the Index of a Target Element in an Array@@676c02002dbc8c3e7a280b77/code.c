@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int N,key,flag=0,i;
+    int N,key,flag=0,i,index;
     scanf("%d",&N);
     int arr[N];
     for(i=0;i<N;i++){
@@ -9,11 +9,12 @@ int main(){
     scanf("%d",&key);
     for(i=0;i<N;i++){
           if(arr[i]==key){
+            index=i;
             flag=1;
           }
     }
     if(flag==1){
-        printf("%d",arr[i]);
+        printf("%d",index);
     }
     else{
         printf("-1");
