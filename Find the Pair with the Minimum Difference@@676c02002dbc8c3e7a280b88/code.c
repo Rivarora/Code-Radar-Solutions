@@ -5,7 +5,7 @@ int main() {
     int N, i, j, minDiff = INT_MAX, num1, num2;
     scanf("%d", &N);
     
-    if (N < 2) {  // If only one element, return -1
+    if (N==1) {  // If only one element, return -1
         printf("-1");
         return 0;
     }
