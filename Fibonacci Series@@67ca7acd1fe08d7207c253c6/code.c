@@ -1,8 +1,9 @@
-int fibonacciSeries(){
-    int n,fibo;
-    scanf("%d",&n);
-    if(n<=0)
-       return 0;
-    else
-       return fibo(n-1)+fibo(n-2);
+int fibonacciSeries(int n){
+    int a=0,b=1,next;
+    for(i=0;i<n;i++){
+        printf("%d",a);
+        next=a+b;
+        a=b;
+        b=next;
+    }
 }
