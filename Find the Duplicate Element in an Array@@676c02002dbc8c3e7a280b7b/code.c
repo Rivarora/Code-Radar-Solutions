@@ -9,8 +9,8 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    for (i = 1; i < N-1; i++) {
-        for (j = i+1; j < N-1; j++) { // Start from i+1 to avoid self-comparison
+    for (i = 1; i < N; i++) {
+        for (j = i+1; j < N; j++) { // Start from i+1 to avoid self-comparison
             if (arr[i] == arr[j]) {
                 printf("%d ", arr[i]); // Print duplicate
                 break; // Avoid printing the same duplicate multiple times
