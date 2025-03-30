@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int N,freq,i,j;
+    int N,freq=0,i,j;
     scanf("%d",&N);
     int arr[N];
     for(i=0;i<N;i++){
@@ -12,7 +12,7 @@ int main(){
         }
     }
     if(freq>N/2){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     else{
         printf("-1");
