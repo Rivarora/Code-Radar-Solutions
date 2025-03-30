@@ -15,10 +15,15 @@ int main() {
         for (j = i + 1; j < N; j++) { // j starts from i+1 to avoid duplicate pairs
             if (arr[i] + arr[j] == check) {
                 printf("%d %d\n", arr[i], arr[j]);
-                 // Mark that we found at least one pair
+                found = 1;  // Mark that at least one pair is found
             }
         }
     }
 
+    if (!found) {
+        printf("-1");  // Print -1 if no pair is found
+    }
+
     return 0;
 }
+
