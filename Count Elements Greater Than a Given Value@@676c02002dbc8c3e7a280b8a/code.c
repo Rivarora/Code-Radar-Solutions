@@ -11,7 +11,6 @@ for(i=0;i<N;i++){
     if(arr[i]>k){
         count++;
     }
-    printf("%d",count);
 }
-
+printf("%d",count);
 }
