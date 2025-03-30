@@ -30,7 +30,7 @@ int main() {
             count++;
         } else {
             if (count > maxCount) maxCount = count;
-            count = 1;
+            
         }
     }
 
