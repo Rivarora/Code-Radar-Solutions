@@ -1,39 +1,36 @@
 #include <stdio.h>
 
 int main() {
-    int N, i, max, min,flag=0;
+    int N, i;
+    int increasing = 1, decreasing = 1;
+
+    // Input the size of the array
     scanf("%d", &N);
-    
+
     int arr[N];
+    
+    // Input the elements of the array
     for (i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
 
-    if (N == 1) {  
-        printf("YES");
-        return 0;
-    }
-
-    max = arr[0];
-    min = arr[0];
-
-    for (i = 1; i < N; i++) {  
-        if (arr[i] > max) {
-            max = arr[i];
-            flag=1;
+    // Check if the array is non-decreasing or non-increasing
+    for (i = 1; i < N; i++) {
+        if (arr[i] < arr[i - 1]) {
+            increasing = 0;  // If we find a decrease, it's not increasing
         }
-        if (arr[i] < min) {
-            min = arr[i];
-            flag=1;
+        if (arr[i] > arr[i - 1]) {
+            decreasing = 0;  // If we find an increase, it's not decreasing
         }
     }
-    if(flag==1){
-        printf("YES");
+
+    // If either increasing or decreasing is true, it's a monotonic array
+    if (increasing || decreasing) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
     }
-    else{
-        printf("NO");
-    }
-    
 
     return 0;
 }
+
