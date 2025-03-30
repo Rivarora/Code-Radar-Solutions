@@ -28,13 +28,10 @@ int main() {
         if (arr[i] == arr[i - 1]) continue; // Skip duplicates
         if (arr[i] == arr[i - 1] + 1) {
             count++;
-        } else {
-            if (count > maxCount) maxCount = count;
-            
-        }
+       
     }
 
-    
+    if (count > maxCount) maxCount = count;
 
     printf("%d", maxCount);
     return 0;
