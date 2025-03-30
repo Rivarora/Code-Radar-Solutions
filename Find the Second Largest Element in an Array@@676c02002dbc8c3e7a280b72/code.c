@@ -11,7 +11,7 @@ int main(){
     for(i=0;i<N;i++){
         if(arr[i]>large){
             large=arr[i];
-            small=large;
+            second=large;
         }
         else if(arr[i]>small && arr[i]!=large){
             secong=arr[i];
