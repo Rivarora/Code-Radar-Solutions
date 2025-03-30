@@ -1,25 +1,35 @@
-int searchInRotatedArray(int arr[], int n, int k) {
-    int missing = 0;
-    int count = 1;  // We start checking from 1 as it's the smallest positive integer.
-    int i = 0;
-    
-    while (missing < k) {
-        // If arr[i] equals the current count, move to the next element in the array
-        if (i < n && arr[i] == count) {
-            i++;
-        } else {
-            // If the current count is missing, increase the missing count
-            missing++;
+#include <stdio.h>
+
+int searchInRotatedArray(int arr[], int N, int target) {
+    int left = 0, right = N - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        // Check if the mid element is the target
+        if (arr[mid] == target) {
+            return mid;
         }
-        
-        // Move to the next number in the sequence
-        count++;
+
+        // If the left half is sorted
+        if (arr[left] <= arr[mid]) {
+            // Check if the target is in the left half
+            if (arr[left] <= target && target < arr[mid]) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        // If the right half is sorted
+        else {
+            // Check if the target is in the right half
+            if (arr[mid] < target && target <= arr[right]) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
     }
 
-    if(count!=0){
-    return count - 1;}
-    else{
-        printf("-1");
-    }
-
+    return -1;  // Target not found
 }
