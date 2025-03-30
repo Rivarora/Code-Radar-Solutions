@@ -10,6 +10,7 @@ int main(){
     for(i=0;i<N;i++){
         if(N==1){
             printf("YES");
+            return 0;
         }
         if(arr[i]>max){
             max=arr[i];
