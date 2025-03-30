@@ -11,6 +11,7 @@ int main(){
           if(arr[i]==key){
             index=i;
             flag=1;
+            break;
           }
     }
     if(flag==1){
