@@ -6,12 +6,12 @@ int main(){
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    if(N<2){
+    if(arr[i]<2){
         continue;
     }
-    for(i=0;i<N;i++){
+    for(i=2;i<N;i++){
         count=0;
-        if(N%i==0){
+        if(N%arr[i]==0){
             count+=1;
         }
     }
