@@ -2,9 +2,9 @@
 #include <limits.h>
 
 int main() {
-    int N, i, j, minDiff = INT_MAX;
+    int N, i, j, minDiff = INT_MAX, num1, num2;
     scanf("%d", &N);
-    int arr[N], num1, num2;
+    int arr[N];
 
     for (i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
@@ -17,12 +17,13 @@ int main() {
 
             if (diff < minDiff) {
                 minDiff = diff;
-                num1 = arr[i];
-                num2 = arr[j];
+                num1 = arr[i] < arr[j] ? arr[i] : arr[j];
+                num2 = arr[i] > arr[j] ? arr[i] : arr[j];
             }
         }
     }
 
-    printf("%d %d", num2, num1);
+    printf("%d %d", num1, num2);
     return 0;
 }
+
