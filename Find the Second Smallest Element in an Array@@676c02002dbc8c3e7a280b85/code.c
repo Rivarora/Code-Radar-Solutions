@@ -11,7 +11,7 @@ int main() {
     }
     for(i=0;i<N;i++){
         for(j=i+1;j<N;j++){
-            if(arr[i]>arr[j]){
+            if(arr[i]<arr[j]){
                 temp=arr[i];
                 arr[i]=arr[j];
                 arr[j]=temp;
