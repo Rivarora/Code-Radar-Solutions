@@ -14,7 +14,7 @@ int main(){
             second=large;
         }
         else if(arr[i]>second && arr[i]!=large){
-            secong=arr[i];
+            second=arr[i];
         }
     }
     if(small==-1000000){
