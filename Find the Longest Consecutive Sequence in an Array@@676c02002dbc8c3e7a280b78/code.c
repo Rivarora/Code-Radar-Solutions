@@ -44,6 +44,3 @@ int main() {
 
  
 
-    printf("%d", maxCount);
-    return 0;
-}
