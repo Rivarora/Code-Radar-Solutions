@@ -14,9 +14,9 @@ int main(){
     for(i=0;i<N;i++){
         for(j=i+1;j<N;j++){
             diff=arr[i]-arr[j];
-        }
-        if(diff<0){
+            if(diff<0){
             diff=-diff;
+        }
         }
         if(diff<minDiff || (diff==minDiff && arr[i]+arr[j]<num1+num2)){
             minDiff=diff;
