@@ -6,6 +6,9 @@ int main(){
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
+    if(N<2){
+        continue;
+    }
     for(i=0;i<N;i++){
         count=0;
         if(N%i==0){
