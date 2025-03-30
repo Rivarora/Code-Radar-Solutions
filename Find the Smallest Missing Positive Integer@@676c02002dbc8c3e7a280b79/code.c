@@ -13,9 +13,9 @@ int main(){
             found=1;
             break;
         }
-    }}
+    }
     if(!found){
         printf("%d",num);
     }
-    num++;
+    num++;}
 }
