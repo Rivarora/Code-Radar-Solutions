@@ -1,4 +1,4 @@
-int fibo(){
+int fibonacciSeries(){
     int N;
     scanf("%d",&N);
     if(N<=0)
