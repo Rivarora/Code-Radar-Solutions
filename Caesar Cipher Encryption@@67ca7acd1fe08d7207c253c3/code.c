@@ -1,7 +1,7 @@
 void caesarCipher(char message[], int shift, char encrypted[]) {
     int i = 0;
     
-    while (message[i] != '\0') {
+    while (message[i] != 0) {
         char ch = message[i];
 
         // Check if the character is a lowercase letter
