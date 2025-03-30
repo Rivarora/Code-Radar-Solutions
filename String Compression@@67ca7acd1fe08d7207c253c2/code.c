@@ -1,18 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 
-void compressString(char* s) {
-    int n = strlen(s);
-    if (n == 0) return;
-
+void compressString(char* str, char* compressed) {
+    int n = strlen(str);
+    int index = 0;
     int count = 1;
+
     for (int i = 1; i < n; i++) {
-        if (s[i] == s[i - 1]) {
+        if (str[i] == str[i - 1]) {
             count++;
         } else {
-            printf("%c%d", s[i - 1], count);
+            compressed[index++] = str[i - 1];
+            compressed[index++] = count + '0'; // Convert count to character
             count = 1;
         }
     }
-    printf("%c%d", s[n - 1], count); // Print the last character count
+    // Append the last character and its count
+    compressed[index++] = str[n - 1];
+    compressed[index++] = count + '0';
+    compressed[index] = '\0'; // Null-terminate the compressed string
 }
