@@ -9,7 +9,6 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    printf("Duplicate elements: ");
     for (i = 0; i < N; i++) {
         for (j = i + 1; j < N; j++) { // Start from i+1 to avoid self-comparison
             if (arr[i] == arr[j]) {
