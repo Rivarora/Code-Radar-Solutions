@@ -24,6 +24,4 @@ void compressString(char* str, char* compressed) {
     } else {
         printf("%s", compressed);
     }
-
-    return 0;
 }
