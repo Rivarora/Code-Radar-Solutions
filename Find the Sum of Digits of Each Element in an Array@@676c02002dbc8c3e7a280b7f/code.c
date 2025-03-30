@@ -21,7 +21,7 @@ int main() {
             num /= 10;         // Remove last digit
         }
 
-        if (arr[i] < 0) sum = -sum;  // Make sum negative if original number was negative
+        if (arr[i] < 0) sum = sum;  // Make sum negative if original number was negative
 
         printf("%d ", sum);
     }
