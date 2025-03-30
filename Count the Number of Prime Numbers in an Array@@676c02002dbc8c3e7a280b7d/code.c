@@ -20,4 +20,5 @@ int main(){
     if(flag){
         count++;
     }
+    printf("%d",count);
 }
