@@ -23,7 +23,7 @@ int main() {
         }
         if (freq > N / 2) {  
             majority = arr[i];
-            flag=1
+            flag=1;
         }
     }
     if(flag==1){
