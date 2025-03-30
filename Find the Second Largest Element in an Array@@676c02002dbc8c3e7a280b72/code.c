@@ -1,32 +1,26 @@
 #include <stdio.h>
-
-int main() {
-    int n, i, first, second;
-
-    scanf("%d", &n);
-    int arr[n];
-
-    
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+int main(){
+    int N,i;
+    scanf("%d",&N);
+    int arr[N];
+    for(i=0;i<N;i++){
+        scanf("%d"&arr[i]);
     }
-
-    first = second = -1000000;  // Use a very small number
-
-    for (i = 0; i < n; i++) {
-        if (arr[i] > first) {
-            second = first;
-            first = arr[i];
-        } else if (arr[i] > second && arr[i] != first) {
-            second = arr[i];
+    int second=-1000000;
+    int large;
+    for(i=0;i<N;i++){
+        if(arr[i]>large){
+            large=arr[i];
+            small=large;
+        }
+        else if(arr[i]>small && arr[i]!=large){
+            secong=arr[i];
         }
     }
-
-    if (second == -1000000) {
+    if(small==-1000000){
         printf("-1");
-    } else {
-        printf("%d", second);
     }
-
-    return 0;
+    else{
+        printf("%d",second);
+    }
 }
