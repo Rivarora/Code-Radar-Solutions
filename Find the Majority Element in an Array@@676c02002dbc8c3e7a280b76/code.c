@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int N, i, j, freq, majority = -1;
+    int N, i, j, freq, majority = -1,flag=0;
     
     // Input array size
     scanf("%d", &N);
@@ -23,15 +23,17 @@ int main() {
         }
         if (freq > N / 2) {  
             majority = arr[i];
-            break;
-        }
-        else{
-            printf("-1");
+            flag=1
         }
     }
+    if(flag==1){
+        printf("%d",arr[i]);
+    }
+    else{
+        printf("-1");
+    }
 
-    // Print result
-    printf("%d", majority);
+    
 
     return 0;
 }
