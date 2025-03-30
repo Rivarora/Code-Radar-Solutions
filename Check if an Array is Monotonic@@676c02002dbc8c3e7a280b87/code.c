@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main(){
     int N,i,max,min,flag=0;
     scanf("%d",&N);
