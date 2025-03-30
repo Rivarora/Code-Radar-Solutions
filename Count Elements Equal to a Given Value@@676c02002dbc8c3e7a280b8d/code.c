@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main(){
     int N,i,k,count=0;
     scanf("%d",&N);
