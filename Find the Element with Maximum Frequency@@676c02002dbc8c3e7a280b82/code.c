@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int N,maxfreq=0,ele;
+    int N,maxfreq=0,ele,i,j;
     scanf("%d",&N);
     int arr[N];
     for(i=0;i<N;i++){
