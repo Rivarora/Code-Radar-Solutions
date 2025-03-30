@@ -6,7 +6,8 @@ int main() {
     int arr[N];
 
     for (i = 0; i < N; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d", &arr[i]);}
+        for(i=0;i<N;i++){
         int isPrime = 1;
         
         if (arr[i] < 2) isPrime = 0;  // Numbers < 2 are not prime
