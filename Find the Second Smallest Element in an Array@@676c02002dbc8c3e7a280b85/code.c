@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int N, i,j,temp,sorted;
+    int N, i, j, temp;
     scanf("%d", &N);
     int arr[N];
 
@@ -9,14 +9,20 @@ int main() {
     for(i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    for(i=0;i<N;i++){
-        for(j=i+1;j<N;j++){
-            if(arr[i]<arr[j]){
-                temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
+
+    // Sorting the array in descending order
+    for(i = 0; i < N-1; i++) {
+        for(j = i + 1; j < N; j++) {
+            if(arr[i] < arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }
-    printf("%d",arr[0]);
-    }
+
+    // Printing the largest element (which will be at the first index after sorting)
+    printf("%d", arr[0]);
+
+    return 0;
+}
