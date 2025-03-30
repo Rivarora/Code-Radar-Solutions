@@ -19,11 +19,7 @@ int main(){
         }
         if(diff<minDiff || (diff==minDiff && arr[i]+arr[j]<num1+num2)){
             minDiff=diff;
-        }
-        }
-        
-    }
-    if(arr[i]>arr[j]){
+            if(arr[i]>arr[j]){
          num1=arr[j];
          num2=arr[i];
     }
@@ -31,6 +27,11 @@ int main(){
         num1=arr[i];
         num2=arr[j];
     }
+        }
+        }
+        
+    }
+    
     printf("%d %d",num1,num2);
 }
 
