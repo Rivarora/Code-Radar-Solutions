@@ -8,7 +8,7 @@ int main(){
         return 0;
     }
     int arr[N];
-    for(i=0;i<n;i++){
+    for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
     for(i=0;i<N;i++){
