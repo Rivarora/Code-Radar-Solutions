@@ -10,9 +10,7 @@ int main(){
         if(arr[i]%2==0){
             even=arr[i];
         }
-        else{
-            printf("-1");
-        }
+        printf("%d",even);
     }
-    printf("%d",even);
+    
     }
