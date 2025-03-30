@@ -6,9 +6,9 @@ int main(){
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    for(i=0;i<N;i++){
+    for(i=1;i<N;i++){
         int count=0;
-        for(j=0;j<N;j++){
+        for(j=i+1;j<N;j++){
             if(arr[i]==arr[j]){
                 count++;
             }
