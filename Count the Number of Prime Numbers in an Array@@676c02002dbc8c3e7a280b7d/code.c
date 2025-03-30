@@ -8,7 +8,7 @@ int main(){
     }
     for(i=0;i<N;i++){
         count=0;
-        if(i%N==0){
+        if(N%i==0){
             count+=1;
         }
     }
