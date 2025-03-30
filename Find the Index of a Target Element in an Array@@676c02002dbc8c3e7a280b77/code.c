@@ -10,7 +10,6 @@ int main(){
     for(i=0;i<N;i++){
           if(arr[i]==key){
             index=i;
-            flag=1;
             break;
           }
     }
