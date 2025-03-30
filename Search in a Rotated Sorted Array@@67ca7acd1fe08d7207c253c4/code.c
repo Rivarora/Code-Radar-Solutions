@@ -15,18 +15,18 @@ int searchInRotatedArray(int arr[], int N, int target) {
         if (arr[left] <= arr[mid]) {
             // Check if the target is in the left half
             if (arr[left] <= target && target < arr[mid]) {
-                left = mid - 1;
+                right = mid - 1;
             } else {
-                right = mid + 1;
+                left = mid + 1;
             }
         }
         // If the right half is sorted
         else {
             // Check if the target is in the right half
             if (arr[mid] < target && target <= arr[right]) {
-                right = mid + 1;
+                left = mid + 1;
             } else {
-                left = mid - 1;
+                right = mid - 1;
             }
         }
     }
