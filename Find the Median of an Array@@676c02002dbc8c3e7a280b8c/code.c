@@ -3,6 +3,10 @@ int main(){
     int N,i,median,j,temp;
     scanf("%d",&N);
     int arr[N];
+    if(N==1){
+        printf("1");
+        return 0;
+    }
     for(i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
