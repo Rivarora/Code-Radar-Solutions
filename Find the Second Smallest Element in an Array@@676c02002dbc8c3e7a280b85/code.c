@@ -21,18 +21,22 @@ int main() {
         }
     }
 
-    // If there are at least two distinct elements, print the second smallest
-    if (N > 1) {
-        for(i = 1; i < N; i++) {
-            if(arr[i] != arr[0]) {
-                printf("%d", arr[i]);
-                break;
-            }
+    // Find the second smallest element
+    int found = 0;  // Flag to check if second smallest element is found
+    for(i = 1; i < N; i++) {
+        if(arr[i] != arr[0]) {
+            printf("%d", arr[i]);
+            found = 1;
+            break;
         }
-    } else {
+    }
+
+    // If no second smallest element is found (all elements are the same)
+    if (!found) {
         printf("-1");
     }
 
     return 0;
 }
+
 
