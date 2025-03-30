@@ -1,28 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    int num, sum, i, j, d = 0;
-    int digits[10];  // To store digits of the number
-
-    scanf("%d %d", &num, &sum);
-
-    // Extract digits into an array
-    while (num > 0) {
-        digits[d++] = num % 10;
-        num /= 10;
+    int N, i, j, check, found = 0;
+    scanf("%d", &N);
+    
+    int arr[N];
+    for (i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
     }
 
-    // Check pairs for the given sum
-    for (i = d - 1; i > 0; i--) {
-        for (j = i - 1; j >= 0; j--) {
-            if (digits[i] + digits[j] == sum) {
-                printf("%d%d", digits[i], digits[j]);
-                return 0;
+    scanf("%d", &check);
+
+    for (i = 0; i < N; i++) {
+        for (j = i + 1; j < N; j++) { // j starts from i+1 to avoid duplicate pairs
+            if (arr[i] + arr[j] == check) {
+                printf("%d %d\n", arr[i], arr[j]);
+                 // Mark that we found at least one pair
             }
         }
     }
 
-    printf("-1");  // No valid pair found
     return 0;
 }
-
