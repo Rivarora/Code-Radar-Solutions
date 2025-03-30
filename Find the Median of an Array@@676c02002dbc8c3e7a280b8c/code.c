@@ -15,7 +15,7 @@ int main(){
         }
     }
     if(N%2==0){
-        median=(arr[N/2]+arr[N/2+1])/2;
+        median=(arr[N/2]+arr[N/2-1])/2;
     }
     else{
         median=N/2+1;
