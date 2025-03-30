@@ -2,7 +2,7 @@
 
 int main() {
     int N, i, palindrome=0,count=0;
-    scanf("%d %d", &N,&k);
+    scanf("%d", &N);
     
     int arr[N];
     for(i = 0; i < N; i++) {
