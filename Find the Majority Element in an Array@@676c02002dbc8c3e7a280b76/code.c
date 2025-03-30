@@ -27,7 +27,7 @@ int main() {
         }
     }
     if(flag==1){
-        printf("%d",arr[i]);
+        printf("%d",majority);
     }
     else{
         printf("-1");
