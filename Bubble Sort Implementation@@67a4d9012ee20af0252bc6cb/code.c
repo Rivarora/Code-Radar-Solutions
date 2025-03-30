@@ -8,6 +8,11 @@ int bubbleSort(int arr[],int n){
                 arr[j]=temp;
             }
         }
-        return temp;
+    }
+}
+int printArray(int arr[],int n){
+    int n,i;
+    for(i=0;i<n;i++){
+        printf("%d",temp);
     }
 }
