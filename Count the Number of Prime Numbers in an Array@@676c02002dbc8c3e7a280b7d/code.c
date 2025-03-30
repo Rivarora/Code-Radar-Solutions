@@ -11,7 +11,7 @@ int main(){
         if(arr[i]<2){
             flag=0;
         }
-        for(j=2;i<arr[i];j++){
+        for(j=2;j<arr[i];j++){
             if(arr[i]%j==0){
                 flag=0;
             }
