@@ -14,7 +14,7 @@ int main() {
 
     // Traverse from right to left
     for (i = N - 2; i >= 0; i--) {
-        if (arr[i] > maxRight) {
+        if (arr[i] >= maxRight) {  // Allow duplicates (>= instead of >)
             maxRight = arr[i];
             leaders[count++] = maxRight;
         }
@@ -27,4 +27,5 @@ int main() {
 
     return 0;
 }
+
 
