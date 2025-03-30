@@ -4,7 +4,7 @@ int searchInRotatedArray(int arr[], int N, int target) {
     int left = 0, right = N - 1;
 
     while (left <= right) {
-        int mid = left + right / 2;
+        int mid = left + (right - left) / 2;
 
         // Check if the mid element is the target
         if (arr[mid] == target) {
@@ -15,18 +15,18 @@ int searchInRotatedArray(int arr[], int N, int target) {
         if (arr[left] <= arr[mid]) {
             // Check if the target is in the left half
             if (arr[left] <= target && target < arr[mid]) {
-                right = mid - 1;
+                left = mid - 1;
             } else {
-                left = mid + 1;
+                right = mid + 1;
             }
         }
         // If the right half is sorted
         else {
             // Check if the target is in the right half
             if (arr[mid] < target && target <= arr[right]) {
-                left = mid + 1;
+                right = mid + 1;
             } else {
-                right = mid - 1;
+                left = mid - 1;
             }
         }
     }
