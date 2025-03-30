@@ -1,19 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int N, i,j,flag=1;
+    int N, i, j;
     scanf("%d", &N);
     
-    int arr[N], leaders[N];  // Array to store leaders
+    int arr[N];
     for (i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    for(i=0;i<N-1;i++){
-        for(j=0;j<N-1;j++){
-            if(arr[i]==arr[j]){
-                printf("%d",arr[i]);
-                break;
+
+    printf("Duplicate elements: ");
+    for (i = 0; i < N; i++) {
+        for (j = i + 1; j < N; j++) { // Start from i+1 to avoid self-comparison
+            if (arr[i] == arr[j]) {
+                printf("%d ", arr[i]); // Print duplicate
+                break; // Avoid printing the same duplicate multiple times
             }
         }
     }
-    }
+
+    return 0;
+}
