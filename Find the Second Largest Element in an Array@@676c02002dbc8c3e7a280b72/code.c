@@ -1,44 +1,44 @@
 #include <stdio.h>
 
-int main() {
-    int N, i;
+#include <stdio.h>
 
-    // Input the size of the array
-    scanf("%d", &N);
-
-    int arr[N];
-
-    // Input the array elements (including negative values)
-    for (i = 0; i < N; i++) {
-        scanf("%d", &arr[i]);
+void secondLargest(int arr[], int n) {
+    if (n < 2) {
+        printf("-1");
+        return;
     }
 
-    // Handle edge case of single element array
-    if (N < 2) {
+    int first = arr[0], second = -1;
+    
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > first) {
+            second = first;
+            first = arr[i];
+        } else if (arr[i] > second && arr[i] != first) {
+            second = arr[i];
+        }
+    }
+
+    if (second == -1)
+        printf("-1");
+    else
+        printf("%d", second);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    if (n <= 0) {
         printf("-1");
         return 0;
     }
 
-    int largest = arr[0];
-    int secondLargest = arr[0];
-
-    // Find the largest and second largest elements
-    for (i = 1; i < N; i++) {
-        if (arr[i] > largest) {
-            secondLargest = largest;    // Update second largest
-            largest = arr[i];           // Update largest
-        } else if (arr[i] > secondLargest && arr[i] != largest) {
-            secondLargest = arr[i];
-        }
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
-    // Check if second largest exists
-    if (largest == secondLargest) {
-        printf("-1");
-    } else {
-        printf("%d", secondLargest);
-    }
-
+    secondLargest(arr, n);
     return 0;
 }
-
