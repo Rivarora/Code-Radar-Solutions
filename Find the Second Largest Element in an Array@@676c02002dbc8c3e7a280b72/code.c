@@ -17,7 +17,7 @@ int main(){
             second=arr[i];
         }
     }
-    if(small==-1000000){
+    if(second==-1000000){
         printf("-1");
     }
     else{
