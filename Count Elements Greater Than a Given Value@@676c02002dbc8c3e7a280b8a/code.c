@@ -2,14 +2,12 @@
 
 int main() {
     int N, i, count = 0, k;
-    scanf("%d", &N);
+    scanf("%d %d", &N,&k);
     
     int arr[N];
     for(i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-
-    scanf("%d", &k); // Read the value of k
 
     for(i = 0; i < N; i++) {
         if(arr[i] > k) {
