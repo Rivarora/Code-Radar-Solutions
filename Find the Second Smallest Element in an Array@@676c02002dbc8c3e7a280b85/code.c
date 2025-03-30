@@ -17,7 +17,7 @@ int main() {
                 arr[j]=temp;
             }
         }
-        int sorted[N]=temp;
+        
     }
-    printf("%d",arr[1]);
+    printf("%d",temp);
     }
