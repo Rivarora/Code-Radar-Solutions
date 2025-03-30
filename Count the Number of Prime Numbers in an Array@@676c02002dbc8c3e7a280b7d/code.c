@@ -16,9 +16,10 @@ int main(){
                 flag=0;
             }
         }
-    }
-    if(flag){
+        if(flag){
         count++;
     }
+    }
+    
     printf("%d",count);
 }
