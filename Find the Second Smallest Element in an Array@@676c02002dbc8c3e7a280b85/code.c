@@ -10,10 +10,10 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Sorting the array in descending order
+    // Sorting the array in ascending order
     for(i = 0; i < N-1; i++) {
         for(j = i + 1; j < N; j++) {
-            if(arr[i] < arr[j]) {
+            if(arr[i] > arr[j]) {  // Sort in ascending order
                 temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -21,8 +21,18 @@ int main() {
         }
     }
 
-    // Printing the largest element (which will be at the first index after sorting)
-    printf("%d", arr[1]);
+    // If there are at least two distinct elements, print the second smallest
+    if (N > 1) {
+        for(i = 1; i < N; i++) {
+            if(arr[i] != arr[0]) {
+                printf("%d", arr[i]);
+                break;
+            }
+        }
+    } else {
+        printf("-1");
+    }
 
     return 0;
 }
+
