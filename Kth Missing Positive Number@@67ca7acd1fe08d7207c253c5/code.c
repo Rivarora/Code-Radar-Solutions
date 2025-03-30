@@ -1,18 +1,13 @@
 int findKthMissing(int arr[],int n,int k){
-    int missingCount = 0;
-    int current = 1;
-    int i = 0;
-
-    while (missingCount < k) {
-        if (i < n && arr[i] == current) {
-            // If the current number is in the array, move to the next number
+    int missing=0;
+    int count=0;
+    while(missing<k){
+        if(i<n && arr[i]==count){
             i++;
-        } else {
-            // If the current number is missing, count it
-            missingCount++;
         }
-        current++;
+        else{
+            missing++;
+        }
+        count++
     }
-
-    return current - 1;
-}
+    return count-1;}
