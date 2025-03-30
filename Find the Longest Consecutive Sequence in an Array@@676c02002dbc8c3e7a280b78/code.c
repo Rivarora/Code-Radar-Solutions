@@ -34,7 +34,7 @@ int main() {
         }
     }
 
-    if (count > maxCount) maxCount = count;
+ 
 
     printf("%d", maxCount);
     return 0;
