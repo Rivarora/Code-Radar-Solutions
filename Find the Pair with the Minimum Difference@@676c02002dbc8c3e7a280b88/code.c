@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 int main(){
-    int N,i,j,minDiff=INT_MAX,num1,num2;
+    int N,i,j,minDiff=INT_MAX,num1,num2,diff;
     scanf("%d",&N);
     if(N==1){
         printf("-1");
