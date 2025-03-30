@@ -10,7 +10,6 @@ int main(){
         if(arr[i]%2==0 && arr[i]>maxeven){
             maxeven=arr[i];
         }
-        printf("%d",maxeven);
     }
-    
+    printf("%d",maxeven);
     }
