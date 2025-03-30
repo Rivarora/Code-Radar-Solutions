@@ -1,26 +1,24 @@
 #include <stdio.h>
-int main(){
-    int N,i;
-    scanf("%d",&N);
-    if(N==1){
-        printf("%d",arr[0]);
-        return 0;
-    }
+
+int main() {
+    int N, i;
+    scanf("%d", &N);
+    
     int arr[N];
-    for(i=0;i<N-1;i++){
-        scanf("%d",&arr[i]);
+    for (i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
     }
-    if(arr[i]>arr[i-1]){
-         printf("%d",arr[i]);
-         return 0;
+
+    int maxRight = arr[N - 1];  // Rightmost element is always a leader
+    printf("%d ", maxRight);
+
+    // Traverse from right to left
+    for (i = N - 2; i >= 0; i--) {
+        if (arr[i] > maxRight) {
+            maxRight = arr[i];
+            printf("%d ", maxRight);
+        }
     }
-    if(arr[N-1]>arr[N-2]){
-        printf("%d",arr[N-1]);
-        return 0;
-    }
-    for(i=1;i<N;i++){
-    if(arr[i]>arr[i+1] && arr[i]>arr[i-1]){
-        printf("%d",arr[i]);
-    }
-    }
+
+    return 0;
 }
