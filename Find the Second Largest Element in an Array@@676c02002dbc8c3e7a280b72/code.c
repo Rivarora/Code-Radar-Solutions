@@ -12,13 +12,14 @@ int main() {
 
     int arr[n];
 
+    
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    first = second = arr[0];
+    first = second = -1000000;  // Use a very small number
 
-    for (i = 1; i < n; i++) {
+    for (i = 0; i < n; i++) {
         if (arr[i] > first) {
             second = first;
             first = arr[i];
@@ -27,7 +28,7 @@ int main() {
         }
     }
 
-    if (first == second) {
+    if (second == -1000000) {
         printf("-1");
     } else {
         printf("%d", second);
@@ -35,4 +36,5 @@ int main() {
 
     return 0;
 }
+
 
