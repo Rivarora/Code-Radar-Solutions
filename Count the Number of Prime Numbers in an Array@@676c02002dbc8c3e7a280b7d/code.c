@@ -10,10 +10,11 @@ int main() {
         for(i=0;i<N;i++){
         int isPrime = 1;
         
-        if (arr[i] < 2) isPrime = 0;  // Numbers < 2 are not prime
+        if (arr[i] < 2){
+            isPrime = 0;}  // Numbers < 2 are not prime
         
-        for (j = 2; j < arr[i]; j++) { 
-            if (arr[i] % j == 0) {
+        for (i = 2; i < arr[i]; j++) { 
+            if (arr[i] % i == 0) {
                 isPrime = 0;
                 break;
             }
