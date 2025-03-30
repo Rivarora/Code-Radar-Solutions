@@ -4,7 +4,7 @@ int findKthMissing(int arr[],int n,int k){
     int i = 0;
 
     while (missingCount < k) {
-        if (i < N && arr[i] == current) {
+        if (i < n && arr[i] == current) {
             // If the current number is in the array, move to the next number
             i++;
         } else {
